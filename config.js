@@ -1,6 +1,6 @@
 var config = {
          style: 'mapbox://styles/adnoticias/cm9rpnk8w00jz01so789a7vkh',
-    // leave commented to use Mapbox Standard Style
+         // leave commented to use Mapbox Standard Style
     accessToken: 'pk.eyJ1IjoiYWRub3RpY2lhcyIsImEiOiJjbTlyb2Mzb2IxOXQzMmtvZ2RkZWoybzMxIn0.eGFfTyBGuA16Gdx92WmbOw',
     showMarkers: true,
     markerColor: '#3FB1CE',
@@ -40,7 +40,7 @@ var config = {
                 {
                      layer: 'MunicipiosEdomex',
                      opacity: 1,
-                //     duration: 5000
+                     duration: 5000
                 }
             ],
             onChapterExit: [
@@ -76,6 +76,7 @@ var config = {
                 {
                     layer: 'MunicipiosEdomex',
                     opacity: 1,
+                    duration: 5000
                 }
             ],
             onChapterExit: []
@@ -118,4 +119,5 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         }
+    ]
 };
