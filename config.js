@@ -1,5 +1,6 @@
+     config = {
+        style: 'mapbox://styles/mapbox/standard-satellite',
 var config = {
-     style: 'mapbox://styles/mapbox/standard-satellite',
     // leave commented to use Mapbox Standard Style
     accessToken: 'pk.eyJ1IjoiYWRub3RpY2lhcyIsImEiOiJjbTlyb2Mzb2IxOXQzMmtvZ2RkZWoybzMxIn0.eGFfTyBGuA16Gdx92WmbOw',
     showMarkers: true,
@@ -37,11 +38,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
+                {
+                     layer: 'MunicipiosEdomex',
+                     opacity: 1,
                 //     duration: 5000
-                // }
+                }
             ],
             onChapterExit: [
                 // {
@@ -72,7 +73,12 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: true,
             callback: '',
-            onChapterEnter: [],
+            onChapterEnter: [
+                {
+                    layer: 'MunicipiosEdomex',
+                    opacity: 1,
+                }
+            ],
             onChapterExit: []
         },
         {
@@ -113,5 +119,5 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         }
-    ]
 };
+    ]
