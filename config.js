@@ -1,5 +1,5 @@
 var config = {
-         style: 'mapbox://styles/mapbox/standard-satellite',
+         style: 'mapbox://styles/adnoticias/cm9rpnk8w00jz01so789a7vkh',
     // leave commented to use Mapbox Standard Style
     accessToken: 'pk.eyJ1IjoiYWRub3RpY2lhcyIsImEiOiJjbTlyb2Mzb2IxOXQzMmtvZ2RkZWoybzMxIn0.eGFfTyBGuA16Gdx92WmbOw',
     showMarkers: true,
