@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/adnoticias/cm9rpnk8w00jz01so789a7vkh',
+     style: 'mapbox://styles/mapbox/standard-satellite',
     // leave commented to use Mapbox Standard Style
     accessToken: 'pk.eyJ1IjoiYWRub3RpY2lhcyIsImEiOiJjbTlyb2Mzb2IxOXQzMmtvZ2RkZWoybzMxIn0.eGFfTyBGuA16Gdx92WmbOw',
     showMarkers: true,
@@ -17,7 +17,7 @@ var config = {
     auto: false,
     title: 'Rancho Palma: Un agujero negro de la Operación Bastión',
     subtitle: 'The Storytelling Template helps you create an awesome animated map story with ease.',
-    byline: 'Investigación e interactivo: Ivan Ortiz',
+    byline: 'Texto y visualización: Ivan Ortiz',
     footer: '<br> Esta visualización fue creada usando la plantilla <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a>.',
     chapters: [
         {
@@ -28,8 +28,8 @@ var config = {
             image: './assets/san-fran.jpeg',
             description: 'The first chapter contains a title, image, and camera view for San Francisco, California. Update the chapter data to make it your own.',
             location: {
-                center: [-122.418398, 37.759483],
-                zoom: 8.5,
+                center: [-99.74307, 19.46924],
+                zoom: 7.5,
                 pitch: 60,
                 bearing: 0
             },
@@ -58,7 +58,7 @@ var config = {
             image: './assets/washington-dc.jpg',
             description: 'The second chapter flies to Washington, D.C., updates the camera pitch, and slowly rotates. <br>  <br> Washington, D.C., the capital of the United States, is a vibrant city known for its iconic landmarks, including the White House, the U.S. Capitol, and the Washington Monument. It serves as the political heart of the nation and a center for history, culture, and international diplomacy.',
             location: {
-                center: [-77.020636, 38.886900],
+                center: [-99.74307, 19.46924],
                 zoom: 8.5,
                 pitch: 60,
                 bearing: -43.2,
