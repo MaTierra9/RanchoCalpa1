@@ -12,7 +12,7 @@ var config = {
         markerColor: 'orange'
     },
     insetPosition: 'bottom-right',
-    theme: 'dark',
+    theme: 'azul',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
     title: 'Rancho Palma: Un agujero negro de la Operación Bastión',
