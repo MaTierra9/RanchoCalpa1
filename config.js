@@ -38,23 +38,23 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                     layer: 'MunicipiosEdomex', 'ranchos-opb'
+                     layer: 'MunicipiosEdomex',
                      opacity: 1,
                      duration: 5000
                 },
                 {
-                     layer: 'ranchos-opb'
+                     layer: 'ranchos-opb',
                      opacity: 1,
                      duration: 5000
                 }
             ],
             onChapterExit: [
                 {
-                     layer: 'MunicipiosEdomex', 'ranchos-opb',
+                     layer: 'MunicipiosEdomex',
                      opacity: 0
                  }, 
                  {
-                     layer: 'ranchos-opb'
+                     layer: 'ranchos-opb',
                      opacity: 1,
                      duration: 5000
                 }
@@ -84,7 +84,7 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'MunicipiosEdomex', 'ranchos-opb'
+                    layer: 'MunicipiosEdomex',
                     opacity: 1,
                     duration: 5000
                 }
