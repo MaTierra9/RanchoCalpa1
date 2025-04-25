@@ -22,11 +22,11 @@ var config = {
     chapters: [
         {
             id: 'slug-style-id',
-            alignment: 'left',
+            alignment: 'full',
             hidden: false,
-            title: 'El 30 de marzo de 2025',
-            image: './assets/san-fran.jpeg',
-            description: 'The first chapter contains a title, image, and camera view for San Francisco, California. Update the chapter data to make it your own.',
+            title: '',
+            image: 'https://adnoticias.mx/wp-content/uploads/2024/12/AD-Noticias-35-anos.svg',
+            description: 'A finales de marzo de 2025 autoridades estatales y federales realizaron la Operación Bastión, una serie de cateos en 21 inmuebles presuntamente utilizados por la Nueva Familia Michoacana en el Estado de México. Sin embargo, dos de de estos ranchos, Calpa y Las Piñuelas, fueron asegurados en 2020 y 2022. Así lo revelan informes albergados los Guacamaya Leaks localizados por AD Noticias. Ni la Fiscalía ni el Gobierno Mexiquense ni el Ejército ',
             location: {
                 center: [-99.74307, 19.46924],
                 zoom: 7.5,
@@ -41,13 +41,23 @@ var config = {
                      layer: 'MunicipiosEdomex', 'ranchos-opb'
                      opacity: 1,
                      duration: 5000
+                },
+                {
+                     layer: 'ranchos-opb'
+                     opacity: 1,
+                     duration: 5000
                 }
             ],
             onChapterExit: [
                 {
                      layer: 'MunicipiosEdomex', 'ranchos-opb',
                      opacity: 0
-                 }
+                 }, 
+                 {
+                     layer: 'ranchos-opb'
+                     opacity: 1,
+                     duration: 5000
+                }
             ]
         },
         {
