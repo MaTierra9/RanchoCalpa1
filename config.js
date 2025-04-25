@@ -16,7 +16,7 @@ var config = {
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
     title: 'Rancho Palma: Un agujero negro de la Operación Bastión',
-    subtitle: 'The Storytelling Template helps you create an awesome animated map story with ease.',
+    subtitle: 'Dos ranchos asegurados en la operación Bastión ya habían sido cateados años atrás, pero se presentaron como recientes. Autotidades mexiquenses y federales no brindaron explicaciones al respecto.',
     byline: 'Texto y visualización: Ivan Ortiz',
     footer: '<br> Esta visualización fue creada usando la plantilla <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a>.',
     chapters: [
@@ -24,7 +24,7 @@ var config = {
             id: 'slug-style-id',
             alignment: 'left',
             hidden: false,
-            title: 'San Francisco',
+            title: 'El 30 de marzo de 2025',
             image: './assets/san-fran.jpeg',
             description: 'The first chapter contains a title, image, and camera view for San Francisco, California. Update the chapter data to make it your own.',
             location: {
@@ -38,16 +38,16 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                     layer: 'MunicipiosEdomex',
+                     layer: 'MunicipiosEdomex', 'ranchos-opb'
                      opacity: 1,
                      duration: 5000
                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                {
+                     layer: 'MunicipiosEdomex', 'ranchos-opb',
+                     opacity: 0
+                 }
             ]
         },
         {
@@ -74,7 +74,7 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'MunicipiosEdomex',
+                    layer: 'MunicipiosEdomex', 'ranchos-opb'
                     opacity: 1,
                     duration: 5000
                 }
@@ -118,6 +118,6 @@ var config = {
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
-        }
+        },
     ]
 };
