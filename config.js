@@ -16,7 +16,7 @@ var config = {
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
     title: 'Rancho Palma: Un agujero negro de la Operación Bastión',
-    subtitle: 'Dos ranchos asegurados en la operación Bastión ya habían sido cateados años atrás; pero se presentaron como recientes. Autoridades mexiquenses y federales no brindaron explicaciones al respecto.',
+    subtitle: 'Dos ranchos añsegurados en la operación Bastión ya habían sido cateados años atrás; pero se presentaron como recientes. Autoridades mexiquenses y federales no brindaron explicaciones al respecto.',
     byline: 'Texto y visualización: Ivan Ortiz',
     footer: '<br> Esta visualización fue creada usando la plantilla <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a>.',
     chapters: [
@@ -81,6 +81,28 @@ var config = {
                      opacity: 1,
                      duration: 5000
                 },
+         {
+            id: 'segundo-identificador',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'El 30 de marzo de 2025 autoridades estatales y federales realizaron la Operación Bastión, una serie de cateos en 21 inmuebles presuntamente utilizados por la Nueva Familia Michoacana en el Estado de México. Sin embargo, dos de de estos ranchos, Calpa y Las Piñuelas, fueron asegurados en 2020 y 2022. Así lo revelan informes albergados los Guacamaya Leaks localizados por AD Noticias. Ni la Fiscalía ni el Gobierno Mexiquense ni el Ejército ',
+            location: {
+                center: [-99.74307, 19.46924],
+                zoom: 7.5,
+                pitch: 60,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                     layer: 'MunicipiosEdomex',
+                     opacity: 1,
+                     duration: 5000
+                },           
                 {
                      layer: 'ranchos-opb',
                      opacity: 1,
@@ -99,7 +121,7 @@ var config = {
             ]
         },
         {
-            id: 'segundp-identificador',
+            id: 'tercer-identificador',
             alignment: 'right',
             hidden: false,
             title: 'Washington, D.C.',
@@ -169,3 +191,5 @@ var config = {
         },
     ]
 };
+
+
