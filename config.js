@@ -1,6 +1,6 @@
 var config = {
-         style: 'mapbox://styles/adnoticias/cm9rpnk8w00jz01so789a7vkh',
-         // leave commented to use Mapbox Standard Style
+    style: 'mapbox://styles/adnoticias/cm9rpnk8w00jz01so789a7vkh',
+    // leave commented to use Mapbox Standard Style
     accessToken: 'pk.eyJ1IjoiYWRub3RpY2lhcyIsImEiOiJjbTlyb2Mzb2IxOXQzMmtvZ2RkZWoybzMxIn0.eGFfTyBGuA16Gdx92WmbOw',
     showMarkers: true,
     markerColor: '#3FB1CE',
@@ -10,7 +10,7 @@ var config = {
     inset: true,
     insetOptions: {
         markerColor: 'orange'
-    },
+        },
     insetPosition: 'bottom-right',
     theme: 'azul',
     use3dTerrain: false, //set true for enabling 3D maps.
@@ -38,24 +38,49 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                     layer: 'MunicipiosEdomex',
-                     opacity: 1,
-                     duration: 5000
+                    layer: 'MunicipiosEdomex',
+                    opacity: 1,
+                    duration: 5000
                 },
                 {
-                     layer: 'ranchos-opb',
-                     opacity: 1,
-                     duration: 5000
+                    layer: 'FMMunicipios2020',
+                    opacity: 1,
+                    duration: 5000
+                },
+                {
+                    layer: 'FMMunicipios2024',
+                    opacity: 1,
+                    duration: 5000
+                },
+                {
+                    layer: 'ranchos-opb',
+                    opacity: 1,
+                    duration: 5000
+                },
+                {
+                    layer: 'bases-halconeo-2020',
+                    opacity: 1,
+                    duration: 5000
+                },
+                {
+                    layer: 'rancho-las-piuelas-p',
+                    opacity: 1,
+                    duration: 5000
+                },
+                {
+                    layer: 'rancho-calpa-p',
+                    opacity: 1,
+                    duration: 5000
                 }
             ],
             onChapterExit: [
                 {
-                     layer: 'MunicipiosEdomex',
-                     opacity: 0
-                 }, 
-                 {
-                     layer: 'ranchos-opb',
-                     opacity: 0
+                    layer: 'MunicipiosEdomex',
+                    opacity: 0
+                }, 
+                {
+                    layer: 'ranchos-opb',
+                    opacity: 0
                 }
             ]
         },
@@ -77,11 +102,23 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                     layer: 'MunicipiosEdomex',
-                     opacity: 1,
-                     duration: 5000
+                        layer: 'MunicipiosEdomex',
+                        opacity: 1,
+                        duration: 5000
                 },
-         {
+            ],
+            onChapterExit: [
+                {
+                    layer: 'MunicipiosEdomex',
+                    opacity: 0
+                }, 
+                {
+                    layer: 'ranchos-opb',
+                    opacity: 0
+                }
+            ]
+        },
+        {
             id: 'segundo-identificador',
             alignment: 'center',
             hidden: false,
@@ -191,5 +228,3 @@ var config = {
         }
     ]
 };
-
-
