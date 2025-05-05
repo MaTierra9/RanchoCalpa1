@@ -25,7 +25,7 @@ var config = {
             alignment: 'full',
             hidden: false,
             title: '',
-            image: 'https://adnoticias.mx/wp-content/uploads/2024/12/AD-Noticias-35-anos.svg',
+            image: 'assets/AD N Logo.svg',
             description: 'A finales de marzo de 2025 autoridades estatales y federales realizaron la Operación Bastión, una serie de cateos en 21 inmuebles presuntamente utilizados por la Nueva Familia Michoacana en el Estado de México. Sin embargo, dos de de estos ranchos, Calpa y Las Piñuelas, fueron asegurados en 2020 y 2022. Así lo revelan informes albergados los Guacamaya Leaks localizados por AD Noticias. Ni la Fiscalía ni el Gobierno Mexiquense ni el Ejército ',
             location: {
                 center: [-99.74307, 19.46924],
