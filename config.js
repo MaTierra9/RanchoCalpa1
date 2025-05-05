@@ -188,7 +188,7 @@ var config = {
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
-        },
+        }
     ]
 };
 
