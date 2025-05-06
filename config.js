@@ -13,7 +13,7 @@ var config = {
         },
     insetPosition: 'bottom-right',
     theme: 'azul',
-    use3dTerrain: false, //set true for enabling 3D maps.
+    use3dTerrain: true, //set true for enabling 3D maps.
     auto: false,
     title: 'Rancho Palma: Un agujero negro de la Operación Bastión',
     subtitle: 'Dos ranchos añsegurados en la operación Bastión ya habían sido cateados años atrás; pero se presentaron como recientes. Autoridades mexiquenses y federales no brindaron explicaciones al respecto.',
@@ -25,12 +25,12 @@ var config = {
             alignment: 'full',
             hidden: false,
             title: '',
-            image: 'assets/AD N Logo.svg',
+            image: 'https://adnoticias.mx/wp-content/uploads/2024/12/AD-Noticias-35-anos.svg',
             description: 'A finales de marzo de 2025 autoridades estatales y federales realizaron la Operación Bastión, una serie de cateos en 21 inmuebles presuntamente utilizados por la Nueva Familia Michoacana en el Estado de México. Sin embargo, dos de de estos ranchos, Calpa y Las Piñuelas, fueron asegurados en 2020 y 2022. Así lo revelan informes albergados los Guacamaya Leaks localizados por AD Noticias. Ni la Fiscalía ni el Gobierno Mexiquense ni el Ejército ',
             location: {
-                center: [-99.74307, 19.46924],
-                zoom: 7.5,
-                pitch: 60,
+                center: [-99.68780, 19.33646],
+                zoom: 4.8,
+                pitch: 31.50,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -44,7 +44,44 @@ var config = {
                 },
                 {
                     layer: 'FMMunicipios2020',
+                    opacity: 0,
+                    duration: 5000
+                },
+                {
+                    layer: 'FMMunicipios2024',
+                    opacity: 0,
+                    duration: 5000
+                },
+                {
+                    layer: 'ranchos-opb',
+                    opacity: 0,
+                    duration: 5000
+                },
+                {
+                    layer: 'bases-halconeo-2020',
+                    opacity: 0,
+                    duration: 5000
+                },
+                {
+                    layer: 'rancho-las-piuelas-p',
+                    opacity: 0,
+                    duration: 5000
+                },
+                {
+                    layer: 'rancho-calpa-p',
+                    opacity: 0,
+                    duration: 5000
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'MunicipiosEdomex',
                     opacity: 1,
+                    duration: 5000
+                },
+                {
+                    layer: 'FMMunicipios2020',
+                    opacity: 0,
                     duration: 5000
                 },
                 {
@@ -54,33 +91,23 @@ var config = {
                 },
                 {
                     layer: 'ranchos-opb',
-                    opacity: 1,
+                    opacity: 0,
                     duration: 5000
                 },
                 {
                     layer: 'bases-halconeo-2020',
-                    opacity: 1,
+                    opacity: 0,
                     duration: 5000
                 },
                 {
                     layer: 'rancho-las-piuelas-p',
-                    opacity: 1,
+                    opacity: 0,
                     duration: 5000
                 },
                 {
                     layer: 'rancho-calpa-p',
-                    opacity: 1,
+                    opacity: 0,
                     duration: 5000
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'MunicipiosEdomex',
-                    opacity: 0
-                }, 
-                {
-                    layer: 'ranchos-opb',
-                    opacity: 0
                 }
             ]
         },
@@ -102,10 +129,40 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                        layer: 'MunicipiosEdomex',
-                        opacity: 1,
-                        duration: 5000
+                    layer: 'MunicipiosEdomex',
+                    opacity: 1,
+                    duration: 5000
                 },
+                {
+                    layer: 'FMMunicipios2020',
+                    opacity: 0,
+                    duration: 5000
+                },
+                {
+                    layer: 'FMMunicipios2024',
+                    opacity: 0,
+                    duration: 5000
+                },
+                {
+                    layer: 'ranchos-opb',
+                    opacity: 0,
+                    duration: 5000
+                },
+                {
+                    layer: 'bases-halconeo-2020',
+                    opacity: 0,
+                    duration: 5000
+                },
+                {
+                    layer: 'rancho-las-piuelas-p',
+                    opacity: 0,
+                    duration: 5000
+                },
+                {
+                    layer: 'rancho-calpa-p',
+                    opacity: 0,
+                    duration: 5000
+                }
             ],
             onChapterExit: [
                 {
