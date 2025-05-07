@@ -215,6 +215,7 @@
             bylineText.innerText = config.byline;
             header.appendChild(bylineText);
         }
+        header.style.backgroundImage = 'url(' + config.backgroundImage + ')';
 
         if (header.innerText.length > 0) {
             header.classList.add(config.theme);
